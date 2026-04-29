@@ -1,0 +1,24 @@
+{
+  "originHash" : "b501747d24a0ac720577ba72594d19953e02391eabe5024f222176a6387fa442",
+  "pins" : [
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "8c0c0a8b49e080e54e5e328cc552821ff07cd341",
+        "version" : "1.2.1"
+      }
+    },
+    {
+      "identity" : "vloauthprovider",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/langdon78/VLOAuthProvider",
+      "state" : {
+        "revision" : "886bbee3ccac74bac4ea96ce3e2f8e2439f039da",
+        "version" : "0.2.0-alpha"
+      }
+    }
+  ],
+  "version" : 3
+}

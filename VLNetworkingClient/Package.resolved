@@ -1,0 +1,24 @@
+{
+  "originHash" : "3d3baa5fcdf3d9993d4b75138f026cd6129aac6375f8452de644711b9001904d",
+  "pins" : [
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "6675bc0ff86e61436e615df6fc5174e043e57924",
+        "version" : "1.4.1"
+      }
+    },
+    {
+      "identity" : "vldebuglogger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/langdon78/VLDebugLogger",
+      "state" : {
+        "revision" : "38676f86e9f6329c8932cf3f86c913974f3503c7",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
