@@ -13,7 +13,7 @@ let package = Package(
             targets: ["VLOAuthFlowCoordinator"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/langdon78/VLOAuthProvider", from: "0.3.5-alpha"),
+        .package(url: "https://github.com/langdon78/VLOAuthProvider", from: "0.3.6-alpha"),
         .package(path: "../VLDebugLogger")
     ],
     targets: [
