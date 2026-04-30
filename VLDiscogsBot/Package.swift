@@ -8,6 +8,7 @@ let package = Package(
         .package(url: "https://github.com/hummingbird-project/hummingbird", from: "2.0.0"),
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.0.0"),
         .package(url: "https://github.com/apple/swift-http-types.git", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-crypto.git", from: "3.0.0"),
         .package(path: "../VLDiscogsClient"),
     ],
     targets: [
@@ -17,6 +18,7 @@ let package = Package(
                 .product(name: "Hummingbird", package: "hummingbird"),
                 .product(name: "NIOCore", package: "swift-nio"),
                 .product(name: "HTTPTypes", package: "swift-http-types"),
+                .product(name: "Crypto", package: "swift-crypto"),
                 .product(name: "VLDiscogsClient", package: "VLDiscogsClient"),
             ],
             path: "Sources/App"
