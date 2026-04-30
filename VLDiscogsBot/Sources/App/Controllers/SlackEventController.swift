@@ -70,17 +70,13 @@ struct SlackEventController: Sendable {
     // MARK: - Private
 
     private func dispatch(_ event: SlackEventPayload) async {
-        print("[Dispatch] type=\(event.type) user=\(event.user ?? "nil") botId=\(event.botId ?? "nil") channel=\(event.channel ?? "nil") text=\(event.text ?? "nil")")
         guard
             event.botId == nil,
             let userId  = event.user,
             let channel = event.channel,
             let text    = event.text,
             !text.isEmpty
-        else {
-            print("[Dispatch] guard failed, dropping event")
-            return
-        }
+        else { return }
 
         await sessionStore.append(Message(role: .user, content: text), forUser: userId)
         let history = await sessionStore.messages(forUser: userId)
