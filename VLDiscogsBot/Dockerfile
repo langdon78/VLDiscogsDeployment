@@ -23,6 +23,8 @@ RUN apt-get update && apt-get install -y \
     libz3-dev \
     && rm -rf /var/lib/apt/lists/*
 
+COPY --from=builder /usr/lib/swift /usr/lib/swift
+
 WORKDIR /app
 COPY --from=builder /build/VLDiscogsBot/.build/release/App .
 
