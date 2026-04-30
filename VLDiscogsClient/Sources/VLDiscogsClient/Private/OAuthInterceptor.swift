@@ -6,6 +6,9 @@
 //
 import VLNetworkingClient
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 #if canImport(AuthenticationServices)
 import AuthenticationServices
 #endif
