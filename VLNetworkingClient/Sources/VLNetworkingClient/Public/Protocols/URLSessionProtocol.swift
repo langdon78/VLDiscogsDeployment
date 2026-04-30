@@ -5,6 +5,9 @@
 //  Created by James Langdon on 7/14/25.
 //
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public protocol URLSessionProtocol: Sendable {
     @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
